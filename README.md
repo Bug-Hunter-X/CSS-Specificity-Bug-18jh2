@@ -1,0 +1,1 @@
+This repository demonstrates a common issue encountered in CSS: unexpected styling due to specificity conflicts between selectors. The `bug.css` file contains CSS rules that lead to unexpected results due to the conflicting selectors. The `solution.css` file provides a corrected version. The README provides a description of the bug and its solution.
