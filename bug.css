@@ -1,0 +1,12 @@
+The CSS specificity rules can be quite confusing and lead to unexpected styling issues when multiple selectors target the same element. For instance, consider this scenario:
+
+```css
+div p { color: blue; }
+.special p { color: red; }
+
+<div>
+  <p class="special">This text should be red.</p>
+</div>
+```
+
+In this case, the more specific selector `.special p` overrides `div p`, resulting in red text. However, understanding how specificity works across different selector types (id, class, element, etc.) requires careful consideration.
