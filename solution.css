@@ -1,0 +1,8 @@
+To fix the issue, ensure selectors are well-defined and prioritize the ones that should take precedence.  Using the `!important` flag is generally discouraged for maintainability reasons, but it's sometimes necessary. This is a more robust solution:
+
+```css
+div p { color: blue; }
+.special p { color: red !important; }
+```
+
+This clearly marks that `.special p` should override the `div p` selector even with more complex class structures or selector inheritance.  However, understand `!important` should be used sparingly. Better approaches are to restructure your CSS to minimize specificity conflicts.
